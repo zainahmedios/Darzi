@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET about page. */
+/* GET dynamic page. */
 router.get('/', function(req, res, next) {
-    res.render('contact');
+  res.render('dyna', { passeddata: 'Sample Data' });
 });
 
-module.exports = router;
+module.exports = router; 
