@@ -1,0 +1,52 @@
+
+<h2>Our Professional Tailors</h2>
+
+<% if (allrecs.length > 0) { %>
+<table border=1>
+    <tr>
+        <th>Tailor ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Specialization</th>
+        <th>Rating</th>
+        <th>Email</th>
+        <th>Adress</th>
+        <th> </th>
+        <th>City</th>
+        <th>State </th>
+        <th>Zip</th>
+        <th>username</th>
+        <th>password</th>
+    
+    </tr>
+    
+    <% allrecs.forEach((recref, index) => { %>
+    <tr>
+        <td><%= recref.tailor_ID %></td>
+        <td><%= recref.first_name %></td>
+        <td><%= recref.last_name %></td>
+        <td><%= recref.specialization %></td>
+        <td><%= recref.avg_rating %></td>
+        <td><%= recref.email %></td>
+        <td><%= recref.address_one %></td>
+        <td><%= recref.address_two %></td>
+        <td><%= recref.city %></td>
+        <td><%= recref.state %></td>
+        <td><%= recref.zipcode %></td>
+        <td><%= recref.username %></td>
+        <td><%= recref.password %></td>
+        <td><a href='/tailor/<%= recref.tailor_ID %>'> Details</a></td>
+        <td><a href='/tailor/<%= recref.tailor_ID %>/edit'>Edit</a></td>
+        <td><a href='/tailor/<%= recref.tailor_ID %>/delete' aria-activedescendant=""onclick="return confirm('Are you sure you want to delete this record?');">Delete</a></td>
+    </tr>
+    
+    <% }); %>
+</table>
+
+<% } else { %>
+
+    <p>Not Records Available</p>
+
+<% } %>
+
+<p> <a href='/tailor/addrecord'>Add New</a> </p>

@@ -1,5 +1,5 @@
 body {
-  padding: 50px;
+  padding: 10px, 20px, 10px, 20px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -11,7 +11,7 @@ a {
 /* Kumail's Standard */
 
 h1{ 
-    font-family: Arial, sans-serif;
+    font-family: Times New Roman, sans-serif;
     color: green;
 }
 
@@ -39,7 +39,7 @@ li {
 
 li a {
     display: block;
-    color: #666;
+    color: darkgreen;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
