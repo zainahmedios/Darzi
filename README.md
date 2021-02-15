@@ -1,6 +1,6 @@
 # Darzi
 
-Fully functionsing dynamic e-commerce website made with JavaScript, SQL and MariaDB
+Fully functioning dynamic e-commerce website made with JavaScript, SQL and MariaDB
 
 The website connects customers to tailors. 
 Allows customers to pick a tailor of their choice. 
